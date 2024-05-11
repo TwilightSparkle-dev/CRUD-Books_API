@@ -13,6 +13,6 @@ trait ValidationErrorResponseTrait
             'success' => false,
             'message' => 'Bad Request',
             'data' => $validator->errors(),
-        ], 400));
+        ], 422));
     }
 }

@@ -13,6 +13,7 @@ use App\Http\Requests\BookUpdateRequest;
 use App\Services\BookService;
 use App\Traits\ApiResponseTrait;
 use App\Traits\GetDetailExceptionMessage;
+use OpenApi\Annotations as OA;
 
 
 class BookController extends Controller
@@ -24,7 +25,6 @@ class BookController extends Controller
     }
 
     /**
-     * Display a listing of the resource.
      * @param BookListRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
