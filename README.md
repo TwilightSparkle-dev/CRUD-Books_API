@@ -5,11 +5,18 @@
 
 ### Installation:
     - clone repo
+    - create DB and fill two DB connections in file "/.env"
     - run command "composer i"
     - run command "php artisan migrate"
-    - run command "php artisan db:seed --class=BooksSeeder"
+    - run command 
 
-### Up local server:
+### Up server:
     - run command "php artisan serve"
+### Run tests:
+    - run command "php artisan test"
+
+### Note:
+    - postman collection loc in root repo dir: "postman-collection_api-crud-books.json"
+    - DB connections can using one database
 
 
