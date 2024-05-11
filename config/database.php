@@ -38,6 +38,13 @@ return [
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
+        'sqlite_testing' => [
+            'driver' => 'sqlite',
+            'url' => env('DB_URL'),
+            'database' => env('TEST_DB_DATABASE', database_path('database_testing.sqlite')),
+            'prefix' => '',
+            'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
+        ],
 
         'mysql' => [
             'driver' => 'mysql',
